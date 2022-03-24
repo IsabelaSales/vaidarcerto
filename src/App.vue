@@ -1,14 +1,17 @@
 <template>
   <v-app id="app">
-    <nav>
-      <router-link to="/">Inicio</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
+  <menuView/>
     <v-main> <router-view/> </v-main>
-
   </v-app>
 </template>
-
+<script>
+import menuView from '../src/components/menuView'
+export default {
+    name: 'app',
+    components: {menuView
+    }
+}
+</script>
 <style scoped>
 
 </style>

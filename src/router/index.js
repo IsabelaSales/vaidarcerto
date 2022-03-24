@@ -1,18 +1,20 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import InicioView from '../views/InicioView.vue'
+import encontreAquiView from '../views/encontreAquiView'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
+    path:'/',
     name: 'inicioView',
     component: InicioView
   },
   {
-    path: '/about',
-    name: 'about',
+    path:'/encontreaquiview',
+    name: 'encontreAquiView',
+    component: encontreAquiView
   }
 ]
 

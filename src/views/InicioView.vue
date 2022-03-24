@@ -1,6 +1,5 @@
 <template>
 <div>
-   <menuView/>
     <v-container class="texto">
         <h1>Ovos da Páscoa Artesanais</h1>
     </v-container>
@@ -16,12 +15,8 @@
   </div>
 </template>
 <script>
-import menuView from '../components/menuView'
 export default {
   name: 'InicioView',
-  components: { 
-    menuView
-  }
 }
 </script>
 <style scoped>
