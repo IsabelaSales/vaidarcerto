@@ -3,7 +3,7 @@
 <template>
   <v-container>
 
-<h2 class="font-weight-black text-center" > Encontre os Melhores Ovos da Páscoa Artesanais Mais Proximo de Você</h2>
+<h2 class="font-weight-black text-center" > ENCONTRE UM PONTO DE VENDA MAIS PRÓXIMO DE VOCÊ</h2>
     </v-container>
 
 </template>
