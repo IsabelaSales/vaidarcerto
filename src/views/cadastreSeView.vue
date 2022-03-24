@@ -1,8 +1,12 @@
 <template>
   <div>
     <v-container class="texto">
-      <h1 class="font-weight-black text-center">Cadastre Seu Ponto De Venda</h1>
+      <h1 class="font-weight-black text-center">CADASTRE SEU PONTO DE VENDA</h1>
     </v-container>
+    <v-img
+      src="https://img.freepik.com/foto-gratis/pastelero-confitero-joven-mujer-caucasica-decorar-pastel-mesa-cocina-pasteles-cupcakes-postre-dulce-vista-aerea-superior_183314-7126.jpg?w=740"
+    />
+    <div></div>
     <v-form ref="form" v-model="valid" lazy-validation>
       <v-text-field
         v-model="name"
@@ -68,7 +72,7 @@
         required
       ></v-text-field>
 
-      <v-btn color="warning" @click="resetValidation"> Concluido</v-btn>
+      <v-btn color="warning " @click="resetValidation"> Concluido</v-btn>
     </v-form>
   </div>
 </template>

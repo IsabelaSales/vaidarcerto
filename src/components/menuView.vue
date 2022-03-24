@@ -33,7 +33,7 @@
               <v-list-item-icon>
                 <v-icon>mdi-home</v-icon>
               </v-list-item-icon>
-              <v-list-item-title>Vendedor Cadastre-se</v-list-item-title>
+              <v-list-item-title>Cadastre-se</v-list-item-title>
             </v-list-item>
           </router-link>
         </v-list-item-group>
