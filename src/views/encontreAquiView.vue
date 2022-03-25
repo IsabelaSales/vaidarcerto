@@ -16,10 +16,11 @@
 
     <v-img 
       height="250"
-      src="item.imagem"
+      :src="item.imagem"
     ></v-img>
 
     <v-card-title>{{item.nome}}</v-card-title>
+    <h4 class="text-center">{{item.sabor}}</h4>
 
     <v-card-text>
       <v-row
@@ -40,45 +41,38 @@
         </div>
       </v-row>
 
-      <div class="my-4 text-subtitle-1">
-        R$ {{item.preco}}
-      </div>
-
-      <div class="font-weight-black text-center">{{item.local.nome}}</div>
-
-      <div class="font-weight text-center">Endereço: {{item.local.endereco}}</div>
-      <div class="font-weight text-center">Cep: {{item.local.cep}}</div>
-
-  
+        <h4 class="my-4 text-subtitle-1 font-weight-black text-center">R$ {{item.preco}}</h4>
+      <h3 class="font-weight-black text-center">{{item.local.nome}}</h3>
+      <h5 class="font-weight text-center">Endereço: {{item.local.endereco}},  Cep: {{item.local.cep}}.</h5>
     </v-card-text>
 
     <v-divider class="mx-4"></v-divider>
 
-    <v-card-title>Tonight's availability</v-card-title>
+    <v-card-title>Disponibilidade</v-card-title>
 
     <v-card-text>
       <v-chip-group
         v-model="selection"
-        active-class="deep-purple accent-4 white--text"
+        active-class=" orange accent-4 white--text"
         column
       >
-        <v-chip>5:30PM</v-chip>
+        <v-chip>26/03/2022</v-chip>
 
-        <v-chip>7:30PM</v-chip>
+        <v-chip>30/03/2022</v-chip>
 
-        <v-chip>8:00PM</v-chip>
+        <v-chip>10/04/2022</v-chip>
 
-        <v-chip>9:00PM</v-chip>
+        <v-chip>28/04/2022</v-chip>
       </v-chip-group>
     </v-card-text>
 
     <v-card-actions>
       <v-btn
-        color="deep-purple lighten-2"
+        color="pink lighten-2"
         text
         @click="reserve"
       >
-        Reserve
+        AGENDAR
       </v-btn>
     </v-card-actions>
   </v-card>
